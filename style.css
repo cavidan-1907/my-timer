@@ -7,8 +7,9 @@ body {
     margin: 0;
 }
 
-.hour {
-    font-size: 2em;
+.clock {
+    font-size: 1em;
+    display: flex;
 }
 
 .sal,
@@ -20,12 +21,13 @@ body {
 }
 .controls {
     text-align: center;
+
 }
 
 button {
     font-size: 1em;
     padding: 10px 20px;
-    margin: 0 10px;
+    margin: 10px 15px;
     cursor: pointer;
     background-color: #4CAF50;
     color: white;
@@ -39,4 +41,11 @@ button:hover {
 
 button:active {
     background-color: #3e8e41;
+}
+
+@media screen and (max-width:776px) {
+    body{
+        flex-direction: column;
+    }
+    
 }
