@@ -30,6 +30,7 @@ function updateClock() {
 }
 
 start.addEventListener('click', ()=> {
+    clearInterval(timer);
     timer = setInterval(updateClock, 10);
 });
 
